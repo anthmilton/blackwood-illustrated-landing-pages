@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bold & Easy Bass Fishing | Memory Bridge Books</title>
+    <meta name="description" content="Large-print, tremor-friendly bass fishing coloring books for seniors with memory challenges. Nostalgic lakeside scenes designed for therapeutic memory care.">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+
+        :root {
+            --color-primary: #2D2D2D;
+            --color-bg: #F5F1E8;
+            --color-accent-a: #D4AF37;
+            --color-accent-b: #8B4513;
+            --color-lake: #7BA8A8;
+            --color-forest: #5A7550;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-primary);
+            line-height: 1.6;
+            background-color: var(--color-bg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* =========================================
+           HEADER
+        ========================================= */
+        header {
+            padding: 20px 0;
+            background: rgba(245, 241, 232, 0.95);
+            backdrop-filter: blur(5px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        .cta-header {
+            padding: 10px 24px;
+            background-color: var(--color-accent-b);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-header:hover {
+            background-color: #6d3510;
+            transform: translateY(-2px);
+        }
+
+        /* =========================================
+           HERO SECTION
+        ========================================= */
+        .hero {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #d4e7e7 0%, #a8c5c5 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-text h1 {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: var(--color-primary);
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.25rem;
+            color: var(--color-accent-b);
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .hero-text .description {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+        }
+
+        .cta-primary {
+            display: inline-block;
+            padding: 16px 40px;
+            background-color: var(--color-accent-b);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+        }
+
+        .cta-primary:hover {
+            background-color: #6d3510;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(139, 69, 19, 0.4);
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        /* =========================================
+           FEATURES SECTION
+        ========================================= */
+        .features {
+            padding: 5rem 0;
+            background-color: white;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .feature-card {
+            padding: 2rem;
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1.5rem;
+            background-color: var(--color-lake);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .feature-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+
+        .feature-card p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* =========================================
+           SAMPLE PREVIEW SECTION
+        ========================================= */
+        .preview {
+            padding: 5rem 0;
+            background-color: var(--color-bg);
+        }
+
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+
+        .preview-image {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .preview-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        /* =========================================
+           TESTIMONIALS
+        ========================================= */
+        .testimonials {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #f0f4f4 0%, #e5eded 100%);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 3rem;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .testimonial-quote {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--color-accent-b);
+        }
+
+        /* =========================================
+           FINAL CTA
+        ========================================= */
+        .final-cta {
+            padding: 6rem 0;
+            background-color: var(--color-primary);
+            color: white;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+        }
+
+        .cta-light {
+            display: inline-block;
+            padding: 16px 40px;
+            background-color: white;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-light:hover {
+            background-color: var(--color-accent-a);
+            color: var(--color-primary);
+            transform: translateY(-3px);
+        }
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+        footer {
+            padding: 3rem 0;
+            background-color: #1a1a1a;
+            color: #aaa;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--color-accent-a);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+        @media (max-width: 768px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .final-cta h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="hub.html" class="brand">Memory Bridge Books</a>
+                <a href="#buy" class="cta-header">Shop on Amazon →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <h1>Bold & Easy<br>Bass Fishing</h1>
+                    <p class="subtitle">Lunkers & Lakes</p>
+                    <p class="description">Large-print, tremor-friendly coloring pages featuring nostalgic lakeside scenes and trophy bass. Designed specifically for seniors with memory challenges who have fishing memories to cherish.</p>
+                    <a href="#buy" class="cta-primary">Get It on Amazon</a>
+                </div>
+                <div class="hero-image">
+                    <img src="big bold bass cover.png" alt="Bold & Easy Bass Fishing Coloring Book Cover - Largemouth bass jumping out of lake">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Designed for Memory Care & Therapeutic Use</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎣</div>
+                    <h3>Memory-Friendly Themes</h3>
+                    <p>Classic bass fishing scenes designed to trigger positive memories and facilitate conversations between seniors and caregivers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✋</div>
+                    <h3>Tremor-Friendly Design</h3>
+                    <p>Bold, clean lines with generous spacing. No tiny details—perfect for those with limited fine motor control.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👁️</div>
+                    <h3>Large Print & High Contrast</h3>
+                    <p>Easy-to-see images with strong outlines and simplified shapes for seniors with visual impairments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏞️</div>
+                    <h3>Nostalgic 1950s Vibes</h3>
+                    <p>Vintage lakeside cabins, classic fishing gear, and serene natural settings that evoke simpler times.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Therapeutic Benefits</h3>
+                    <p>Coloring reduces anxiety, improves focus, and provides a sense of accomplishment for seniors in care.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📖</div>
+                    <h3>One-Sided Printing</h3>
+                    <p>Single-sided pages prevent bleed-through and make it easy to remove and display finished art.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREVIEW SECTION -->
+    <section class="preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sample Pages</h2>
+                <p style="color: #666; max-width: 700px; margin: 0 auto;">Each page features bold, simple illustrations perfect for therapeutic coloring sessions.</p>
+            </div>
+            <div class="preview-grid">
+                <div class="preview-image">
+                    <img src="bold-easy-trout.jpg" alt="Sample bass fishing coloring page - trout">
+                </div>
+                <div class="preview-image">
+                    <img src="bold-easy-saltwater.jpg" alt="Sample bass fishing coloring page - saltwater fish">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Caregivers Are Saying</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p class="testimonial-quote">"My dad fished his whole life. These pages bring him back to those happy days on the lake. The large print makes it easy for him to color without frustration."</p>
+                    <p class="testimonial-author">— Linda M., Daughter & Caregiver</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-quote">"Perfect for our memory care unit. The fishing theme gets residents talking about their own stories. The bold lines work great for those with tremors."</p>
+                    <p class="testimonial-author">— Sarah T., Activity Coordinator</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-quote">"Finally, a coloring book that respects the dignity of seniors. No childish cartoons—just beautiful, nostalgic scenes that honor their life experiences."</p>
+                    <p class="testimonial-author">— Robert K., Occupational Therapist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta" id="buy">
+        <div class="container">
+            <h2>Bring Back the Joy of Fishing</h2>
+            <p>Order your copy today and start creating therapeutic moments with your loved ones.</p>
+            <a href="https://www.amazon.com/dp/YOUR-ASIN-HERE" class="cta-light">Shop on Amazon</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Memory Bridge Books | <a href="hub.html">More Therapeutic Coloring Books</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

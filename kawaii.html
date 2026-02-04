@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackwood Illustrated | Kawaii Collection</title>
+    <meta name="description" content="Adorably magical coloring books for kids 8-12. Cute monsters, cozy bugs, and wholesome adventures.">
+
+    <!-- BRAND FONTS & KAWAII ACCENT FONT -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&family=Fredoka:wght@400;600&display=swap');
+    </style>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='64' height='64' rx='8' fill='%232D2D2D'/%3E%3Cg transform='translate(14, 12) scale(0.35)'%3E%3Cpath d='M45,80 Q50,40 35,10 L35,15 Q40,50 45,90 Q50,110 40,120 L60,120 Q50,110 55,90 Q60,50 65,15 L65,10 Q50,40 55,80 Z' fill='%23F5F1E8'/%3E%3Cpath d='M35,15 Q10,10 0,35 Q5,55 35,50 Z' fill='%23D4AF37'/%3E%3Cpath d='M65,15 Q90,10 100,35 Q95,55 65,50 Z' fill='%23D4AF37'/%3E%3C/g%3E%3C/svg%3E">
+
+    <style>
+        /* === CORE BRAND VARIABLES === */
+        :root {
+            --primary-ink: #2D2D2D;
+            --secondary-vellum: #F5F1E8;
+            --accent-gold: #D4AF37;
+            --accent-leather: #8B4513;
+            --neutral-gray: #999999;
+            
+            /* Kawaii Collection Accents */
+            --kawaii-pink: #FFB3D9;
+            --kawaii-lavender: #E0BBE4;
+            --kawaii-mint: #D4F1F4;
+            --kawaii-peach: #FFD6A5;
+            --kawaii-cream: #FFF9F0;
+
+            --font-headings: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+            --font-fun: 'Fredoka', sans-serif; /* Added for the playful vibe */
+        }
+
+        /* === GLOBAL RESET & BASE === */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-body);
+            color: var(--primary-ink);
+            background-color: var(--secondary-vellum);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* BRAND BACKGROUND TEXTURE */
+        .paper-bg {
+            background-color: #F5F1E8;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+
+        /* === HEADER === */
+        header {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--accent-gold);
+            background: white;
+            position: relative;
+            z-index: 10;
+        }
+
+        .header-logo svg {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            font-family: var(--font-headings);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .nav-links a:hover { color: var(--accent-leather); }
+        .tagline {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: var(--font-fun);
+            color: var(--accent-leather);
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+        }
+
+        /* === HERO SECTION === */
+        .hero {
+            padding: 60px 5%;
+            background: linear-gradient(135deg, var(--kawaii-pink) 0%, var(--kawaii-lavender) 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 10px solid white;
+        }
+
+        /* Kawaii Cloud Decorations */
+        .hero::before, .hero::after {
+            content: '';
+            position: absolute;
+            background: rgba(255,255,255,0.4);
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .hero::before { width: 300px; height: 300px; top: -100px; left: -100px; }
+        .hero::after { width: 200px; height: 200px; bottom: -50px; right: -50px; }
+
+        .hero-content {
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-family: var(--font-fun);
+            font-size: 3.5rem;
+            color: var(--primary-ink);
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 0px white;
+            line-height: 1.1;
+        }
+
+        .subheadline {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            color: #4a4a4a;
+            font-weight: 500;
+        }
+
+        .cta-button {
+            background-color: var(--accent-gold);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-family: var(--font-fun);
+            font-weight: 600;
+            font-size: 1.2rem;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+            border: 2px solid white;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            background-color: var(--accent-leather);
+            box-shadow: 0 8px 20px rgba(139, 69, 19, 0.3);
+        }
+
+        /* Kawaii Illustration CSS Placeholder */
+        .hero-illustration {
+            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* === BOOK SHOWCASE === */
+        .book-showcase {
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-family: var(--font-headings);
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .book-card {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .book-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .book-cover {
+            width: 100%;
+            height: 350px;
+            background-color: var(--neutral-gray);
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .book-title {
+            font-family: var(--font-fun);
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: var(--primary-ink);
+        }
+
+        .age-range {
+            font-size: 0.9rem;
+            color: var(--accent-leather);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .book-desc {
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .btn-small {
+            background-color: var(--kawaii-mint);
+            color: var(--primary-ink);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-block;
+            border: 2px solid transparent;
+        }
+        
+        .btn-small:hover {
+            border-color: var(--accent-gold);
+            background: white;
+        }
+
+        /* === WHY KIDS LOVE IT === */
+        .features {
+            background-color: var(--kawaii-cream);
+            padding: 80px 5%;
+            text-align: center;
+            border-top: 5px solid var(--kawaii-peach);
+            border-bottom: 5px solid var(--kawaii-peach);
+        }
+
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-item {
+            flex: 1 1 200px;
+            max-width: 250px;
+            background: white;
+            padding: 30px 20px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .feature-text {
+            font-family: var(--font-fun);
+            font-size: 1.1rem;
+            color: var(--primary-ink);
+        }
+
+        /* === PERFECT FOR === */
+        .use-cases {
+            padding: 80px 5%;
+            text-align: center;
+        }
+        
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 800px;
+            margin: 30px auto 0;
+        }
+
+        .tag {
+            background-color: var(--kawaii-lavender);
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-family: var(--font-fun);
+            color: white;
+            font-size: 1.1rem;
+            transform: rotate(-2deg);
+        }
+        .tag:nth-child(even) { background-color: var(--kawaii-pink); transform: rotate(2deg); }
+        .tag:nth-child(3n) { background-color: var(--kawaii-peach); transform: rotate(-1deg); }
+
+        /* === AUTHOR SECTION === */
+        .author-section {
+            background-color: white;
+            padding: 60px 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+
+        .author-img {
+            width: 120px;
+            height: 120px;
+            background-color: var(--neutral-gray);
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid var(--accent-gold);
+            display: flex; /* Placeholder center */
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .author-bio {
+            max-width: 600px;
+            font-size: 1.1rem;
+            color: #555;
+            font-style: italic;
+            font-family: var(--font-headings);
+        }
+
+        /* === FOOTER === */
+        footer {
+            background-color: var(--primary-ink);
+            color: var(--secondary-vellum);
+            padding: 60px 5% 30px;
+            text-align: center;
+        }
+
+        .footer-logo svg {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo path { fill: var(--secondary-vellum); }
+        .footer-logo text { fill: var(--secondary-vellum); }
+        .footer-logo text[fill="#8B4513"] { fill: var(--accent-gold); } /* Adjust subtitle for dark mode */
+
+        .footer-links {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--neutral-gray);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .footer-links a:hover { color: var(--accent-gold); }
+
+        .copyright {
+            font-size: 0.8rem;
+            color: #555;
+            margin-top: 30px;
+            border-top: 1px solid #444;
+            padding-top: 20px;
+        }
+
+        /* === DECORATIVE DIVIDER === */
+        .divider-container {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        /* === MEDIA QUERIES === */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .header-logo svg { width: 200px; }
+            .nav-links { display: none; } /* Simplified mobile nav */
+        }
+    </style>
+</head>
+<body class="paper-bg">
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-logo">
+            <svg width="250" height="50" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(20, 10) scale(0.5)" fill="#2D2D2D">
+                  <path d="M45,80 Q50,40 35,10 L35,15 Q40,50 45,90 Q50,110 40,120 L60,120 Q50,110 55,90 Q60,50 65,15 L65,10 Q50,40 55,80 Z" />
+                  <path d="M35,15 Q10,10 0,35 Q5,55 35,50 Z" fill="#D4AF37"/>
+                  <path d="M65,15 Q90,10 100,35 Q95,55 65,50 Z" fill="#D4AF37"/>
+                </g>
+                <text x="85" y="48" font-family="'Playfair Display', serif" font-weight="700" font-size="36" fill="#2D2D2D" letter-spacing="1">BLACKWOOD</text>
+                <text x="320" y="48" font-family="'Inter', sans-serif" font-weight="400" font-size="14" fill="#8B4513" letter-spacing="2" text-transform="uppercase">Illustrated</text>
+              </svg>
+        </div>
+        <div class="tagline">Kawaii Collection</div>
+        <nav class="nav-links">
+            <a href="#">Back to Main</a>
+            <a href="#" style="color: var(--accent-leather);">Shop Amazon</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Adorably Magical Adventures</h1>
+            <p class="subheadline">Cute food monsters, cozy bug companions, and whimsical worlds. <br>Perfectly spooky without the scary!</p>
+            <a href="#books" class="cta-button">Shop Kawaii Books</a>
+        </div>
+        
+        <!-- CSS/SVG Illustration: Cute Ghost Chef -->
+        <div class="hero-illustration">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Body -->
+                <path d="M50,180 Q20,180 20,150 L20,100 Q20,20 100,20 Q180,20 180,100 L180,150 Q180,180 150,180 Q130,180 120,160 Q110,140 100,160 Q90,180 70,180 Q60,180 50,180 Z" fill="#FFFFFF" stroke="#2D2D2D" stroke-width="3"/>
+                <!-- Face -->
+                <circle cx="70" cy="90" r="5" fill="#2D2D2D"/>
+                <circle cx="130" cy="90" r="5" fill="#2D2D2D"/>
+                <path d="M90,95 Q100,105 110,95" stroke="#2D2D2D" stroke-width="3" fill="none"/>
+                <!-- Blush -->
+                <ellipse cx="60" cy="105" rx="8" ry="4" fill="#FFB3D9" opacity="0.6"/>
+                <ellipse cx="140" cy="105" rx="8" ry="4" fill="#FFB3D9" opacity="0.6"/>
+                <!-- Chef Hat -->
+                <path d="M70,25 Q60,5 90,5 Q100,-10 110,5 Q140,5 130,25" fill="#FFFFFF" stroke="#2D2D2D" stroke-width="3"/>
+                <!-- Whisk -->
+                <line x1="160" y1="120" x2="190" y2="100" stroke="#8B4513" stroke-width="3"/>
+                <ellipse cx="190" cy="100" rx="10" ry="15" fill="none" stroke="#D4AF37" stroke-width="2" transform="rotate(30 190 100)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- BOOK SHOWCASE -->
+    <section id="books" class="book-showcase paper-bg">
+        <div class="divider-container">
+            <svg width="100%" height="20" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,10 L90,10 M110,10 L200,10" stroke="#D4AF37" stroke-width="1"/>
+                <rect x="95" y="5" width="10" height="10" transform="rotate(45 100 10)" fill="#2D2D2D"/>
+            </svg>
+        </div>
+        <h2 class="section-title">The Collection</h2>
+
+        <div class="grid">
+            <!-- Book 1 -->
+            <div class="book-card">
+                <img src="gourmet-ghouls.jpg" alt="Gourmet Ghouls Kawaii Coloring Book Cover" style="width: 100%; max-width: 300px; height: auto; margin: 0 auto 20px; display: block; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+                <h3 class="book-title">Gourmet Ghouls</h3>
+                <span class="age-range">Ages 8-12</span>
+                <p class="book-desc">Welcome to the Haunted Cafe! Color adorable zombie cupcakes, ghost puddings, and vampire donuts.</p>
+                <a href="#" class="btn-small">Get it on Amazon</a>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="book-card">
+                <img src="crittercore.jpg" alt="Crittercore Chronicles Kawaii Coloring Book Cover" style="width: 100%; max-width: 300px; height: auto; margin: 0 auto 20px; display: block; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+                <h3 class="book-title">Crittercore Chronicles</h3>
+                <span class="age-range">Ages 8-12</span>
+                <p class="book-desc">Cozy bug companions living their best cottagecore lives. Mushroom houses, beetle tea parties, and more.</p>
+                <a href="#" class="btn-small">Get it on Amazon</a>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="book-card">
+                <div style="width: 100%; max-width: 300px; height: 450px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--kawaii-lavender), var(--kawaii-pink)); border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+                    <div style="text-align: center; color: white; font-family: var(--font-fun); padding: 20px;">
+                        <div style="font-size: 2rem; margin-bottom: 10px;">✨ Coming Soon ✨</div>
+                        <div style="font-size: 1.2rem;">Spooky Sweeties</div>
+                    </div>
+                </div>
+                <h3 class="book-title">Spooky Sweeties</h3>
+                <span class="age-range">Ages 6-10</span>
+                <p class="book-desc">A mix of magic and mischief! Witches, familiars, and glowing potions that are fun to color.</p>
+                <a href="#" class="btn-small" style="opacity: 0.5; cursor: not-allowed;">Notify Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY KIDS LOVE IT -->
+    <section class="features">
+        <h2 class="section-title">Cute, Not Creepy!</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <span class="feature-icon">🍰</span>
+                <h4 class="feature-text">Adorable Food Monsters</h4>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🐛</span>
+                <h4 class="feature-text">Cozy Cottagecore Critters</h4>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">👻</span>
+                <h4 class="feature-text">Friendly Ghosts (No Nightmares!)</h4>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🎨</span>
+                <h4 class="feature-text">Perfect for Ages 8-12</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFECT FOR -->
+    <section class="use-cases paper-bg">
+        <div class="divider-container">
+            <svg width="100%" height="20" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,10 L90,10 M110,10 L200,10" stroke="#D4AF37" stroke-width="1"/>
+                <rect x="95" y="5" width="10" height="10" transform="rotate(45 100 10)" fill="#2D2D2D"/>
+            </svg>
+        </div>
+        <h2 class="section-title" style="margin-top: 20px;">Perfect For...</h2>
+        <div class="tag-cloud">
+            <span class="tag">Halloween Fun</span>
+            <span class="tag">Rainy Days</span>
+            <span class="tag">Kawaii Collectors</span>
+            <span class="tag">Birthday Favors</span>
+            <span class="tag">Art Class</span>
+            <span class="tag">Relaxing</span>
+        </div>
+    </section>
+
+    <!-- AUTHOR -->
+    <section class="author-section">
+        <div class="author-img">
+            <!-- Placeholder SVG for Author -->
+            <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="35" r="20" fill="white"/>
+                <path d="M20,90 Q50,60 80,90" stroke="white" stroke-width="2" fill="none"/>
+            </svg>
+        </div>
+        <h3>By Victoria Blackwood</h3>
+        <p class="author-bio">"Creating wholesome kawaii adventures for kids who love cute creatures and cozy vibes."</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">
+            <!-- Logo SVG White Version via CSS fill -->
+            <svg width="200" height="60" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(20, 10) scale(0.5)" fill="#F5F1E8">
+                  <path d="M45,80 Q50,40 35,10 L35,15 Q40,50 45,90 Q50,110 40,120 L60,120 Q50,110 55,90 Q60,50 65,15 L65,10 Q50,40 55,80 Z" />
+                  <path d="M35,15 Q10,10 0,35 Q5,55 35,50 Z" fill="#D4AF37"/>
+                  <path d="M65,15 Q90,10 100,35 Q95,55 65,50 Z" fill="#D4AF37"/>
+                </g>
+                <text x="85" y="48" font-family="'Playfair Display', serif" font-weight="700" font-size="36" fill="#F5F1E8" letter-spacing="1">BLACKWOOD</text>
+                <text x="320" y="48" font-family="'Inter', sans-serif" font-weight="400" font-size="14" fill="#D4AF37" letter-spacing="2" text-transform="uppercase">Illustrated</text>
+            </svg>
+        </div>
+        
+        <div class="footer-links">
+            <a href="#">All Collections</a>
+            <a href="#">Memory Care</a>
+            <a href="#">Gothic</a>
+            <a href="#">Shop on Amazon</a>
+            <a href="#">Pinterest</a>
+        </div>
+
+        <p class="copyright">© 2026 Blackwood Illustrated</p>
+    </footer>
+
+</body>
+</html>
