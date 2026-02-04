@@ -1,0 +1,63 @@
+{
+  "memory-care": [
+    {
+      "title": "Remember When: 1950s Memory Care",
+      "asin": "YOUR_ASIN_HERE",
+      "cover": "remember-when.jpg"
+    },
+    {
+      "title": "Sunday Drive: Classic Cars",
+      "asin": "YOUR_ASIN_HERE",
+      "cover": "sunday-drive.jpg"
+    },
+    {
+      "title": "Main Street Memories",
+      "asin": "YOUR_ASIN_HERE",
+      "cover": "main-street-memories.jpg"
+    },
+    {
+      "title": "Bold & Easy Fishing Series",
+      "asin": "YOUR_ASIN_HERE",
+      "cover": "big bold bass cover.png"
+    }
+  ],
+  "gothic": [
+    {
+      "title": "Rococo Goth Manor",
+      "asin": "YOUR_ASIN_HERE",
+      "cover": "rococo-goth.jpg"
+    },
+    {
+      "title": "The Watchers: Descent",
+      "asin": "YOUR_ASIN_HERE",
+      "cover": "watchers-1-descent.jpg"
+    },
+    {
+      "title": "The Watchers: Cosmic Keys",
+      "asin": "YOUR_ASIN_HERE",
+      "cover": "watchers-2-cosmic-keys.jpg"
+    },
+    {
+      "title": "The Watchers: Animal Apocalypse",
+      "asin": "YOUR_ASIN_HERE",
+      "cover": "watchers-3-animal-apocalypse.jpg"
+    },
+    {
+      "title": "The Watchers: Thrones of Fire",
+      "asin": "YOUR_ASIN_HERE",
+      "cover": "watchers-4-thrones-of-fire.jpg"
+    }
+  ],
+  "kawaii": [
+    {
+      "title": "Gourmet Ghouls",
+      "asin": "YOUR_ASIN_HERE",
+      "cover": "gourmet-ghouls.jpg"
+    },
+    {
+      "title": "Crittercore Chronicles",
+      "asin": "YOUR_ASIN_HERE",
+      "cover": "crittercore.jpg"
+    }
+  ]
+}
