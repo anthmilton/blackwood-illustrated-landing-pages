@@ -1,2 +1,5 @@
-.DS_Store
-*.log
+# .gitignore
+node_modules/
+.env
+.vercel
+fix_html.py
