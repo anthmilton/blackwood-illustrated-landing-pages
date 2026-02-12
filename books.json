@@ -1,62 +1,131 @@
 {
-  "memory-care": [
+  "memory-care-classic": [
     {
       "title": "Remember When: 1950s Memory Care",
-      "asin": "YOUR_ASIN_HERE",
+      "asin": "B0GLN61M3J",
+      "status": "live",
       "cover": "remember-when.jpg"
     },
     {
       "title": "Sunday Drive: Classic Cars",
-      "asin": "YOUR_ASIN_HERE",
+      "asin": "B0GLNTXF43",
+      "status": "live",
       "cover": "sunday-drive.jpg"
     },
     {
       "title": "Main Street Memories",
-      "asin": "YOUR_ASIN_HERE",
+      "asin": "B0GLN8L5GB",
+      "status": "live",
       "cover": "main-street-memories.jpg"
+    }
+  ],
+  "memory-care-occupational": [
+    {
+      "title": "Built With Hands: Vintage 1950s Trades",
+      "asin": "B0GMXB29GZ",
+      "status": "live",
+      "cover": null,
+      "description": "Tradesman's tools and workshop scenes"
     },
     {
-      "title": "Bold & Easy Fishing Series",
-      "asin": "YOUR_ASIN_HERE",
+      "title": "The Open Road & Field: Outdoorsman's",
+      "asin": "B0GMX5D4Y1",
+      "status": "live",
+      "cover": null,
+      "description": "Farming, trucking, railroading, logging"
+    },
+    {
+      "title": "The Open Road & Field: Boomer Edition",
+      "asin": null,
+      "status": "pending",
+      "cover": null,
+      "description": "Rural trades for 1970s & 80s nostalgia"
+    },
+    {
+      "title": "Built With Hands: Boomer Edition",
+      "asin": null,
+      "status": "pending",
+      "cover": null,
+      "description": "Tradesman's coloring book for 1970s & 80s"
+    },
+    {
+      "title": "Service & Uniform: Boomer Edition",
+      "asin": null,
+      "status": "pending",
+      "cover": null,
+      "description": "First responders for 1970s & 80s"
+    },
+    {
+      "title": "Service & Uniform: Vintage 1950s",
+      "asin": null,
+      "status": "pending",
+      "cover": null,
+      "description": "Service professions coloring book"
+    }
+  ],
+  "fishing": [
+    {
+      "title": "Bold & Easy Bass Fishing",
+      "asin": "B0GL1RR48J",
+      "status": "live",
       "cover": "big bold bass cover.png"
+    },
+    {
+      "title": "Bold & Easy Trout Fishing",
+      "asin": "B0GHQPZLYZ",
+      "status": "live",
+      "cover": "bold-easy-trout.jpg"
+    },
+    {
+      "title": "Bold & Easy Saltwater Fishing",
+      "asin": "B0GLNDM6MC",
+      "status": "live",
+      "cover": "bold-easy-saltwater.jpg"
     }
   ],
   "gothic": [
     {
       "title": "Rococo Goth Manor",
-      "asin": "YOUR_ASIN_HERE",
+      "asin": "B0GGYZMGJ5",
+      "status": "live",
       "cover": "rococo-goth.jpg"
     },
     {
       "title": "The Watchers: Descent",
-      "asin": "YOUR_ASIN_HERE",
+      "asin": null,
+      "status": "unknown",
       "cover": "watchers-1-descent.jpg"
     },
     {
       "title": "The Watchers: Cosmic Keys",
-      "asin": "YOUR_ASIN_HERE",
+      "asin": "B0GHQNNKWD",
+      "status": "live",
       "cover": "watchers-2-cosmic-keys.jpg"
     },
     {
       "title": "The Watchers: Animal Apocalypse",
-      "asin": "YOUR_ASIN_HERE",
+      "asin": "B0GJ3NTLDX",
+      "status": "live",
       "cover": "watchers-3-animal-apocalypse.jpg"
     },
     {
       "title": "The Watchers: Thrones of Fire",
-      "asin": "YOUR_ASIN_HERE",
+      "asin": "B0GHS8GF71",
+      "status": "live",
       "cover": "watchers-4-thrones-of-fire.jpg"
     }
   ],
   "kawaii": [
     {
       "title": "Gourmet Ghouls",
-      "asin": "YOUR_ASIN_HERE",
+      "asin": "B0GKDM79CL",
+      "status": "live",
       "cover": "gourmet-ghouls.jpg"
     },
     {
       "title": "Crittercore Chronicles",
-      "asin": "YOUR_ASIN_HERE",
+      "asin": "B0GHJ6WXKD",
+      "status": "live",
       "cover": "crittercore.jpg"
     }
   ]
