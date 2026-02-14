@@ -35,25 +35,28 @@
       "description": "Farming, trucking, railroading, logging"
     },
     {
-      "title": "The Open Road & Field: Boomer Edition",
-      "asin": null,
-      "status": "pending",
+      "title": "Built With Hands: Boomer Edition",
+      "asin": "B0GN98P31F",
+      "status": "live",
       "cover": null,
-      "description": "Rural trades for 1970s & 80s nostalgia"
+      "description": "Tradesman's coloring book: 1970s & 80s trades (Carpenter, Mechanic, Welder, Painter)",
+      "launchDate": "2026-02-13"
     },
     {
-      "title": "Built With Hands: Boomer Edition",
-      "asin": null,
-      "status": "pending",
+      "title": "The Open Road & Field: Boomer Edition",
+      "asin": "B0GN9XPXFK",
+      "status": "live",
       "cover": null,
-      "description": "Tradesman's coloring book for 1970s & 80s"
+      "description": "Outdoorsman's coloring book: 1970s & 80s rural trades (Farmer, Trucker, Railroader, Heavy Equipment)",
+      "launchDate": "2026-02-13"
     },
     {
       "title": "Service & Uniform: Boomer Edition",
-      "asin": null,
-      "status": "pending",
+      "asin": "B0GN9F3W73",
+      "status": "live",
       "cover": null,
-      "description": "First responders for 1970s & 80s"
+      "description": "Community hero's coloring book: 1970s & 80s first responders (Coast Guard, Police, Firefighter, Paramedic)",
+      "launchDate": "2026-02-13"
     },
     {
       "title": "Service & Uniform: Vintage 1950s",
