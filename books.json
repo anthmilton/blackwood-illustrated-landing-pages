@@ -3,133 +3,90 @@
     {
       "title": "Remember When: 1950s Memory Care",
       "asin": "B0GLN61M3J",
+      "etsyUrl": "",
       "status": "live",
       "cover": "remember-when.jpg"
     },
     {
       "title": "Sunday Drive: Classic Cars",
       "asin": "B0GLNTXF43",
+      "etsyUrl": "https://www.etsy.com/ca/listing/4458215603/sunday-drive-classic-cars-memory-care",
       "status": "live",
       "cover": "sunday-drive.jpg"
     },
     {
       "title": "Main Street Memories",
       "asin": "B0GLN8L5GB",
+      "etsyUrl": "",
       "status": "live",
       "cover": "main-street-memories.jpg"
     }
   ],
-  "memory-care-occupational": [
-    {
-      "title": "Built With Hands: Vintage 1950s Trades",
-      "asin": "B0GMXB29GZ",
-      "status": "live",
-      "cover": null,
-      "description": "Tradesman's tools and workshop scenes"
-    },
-    {
-      "title": "The Open Road & Field: Outdoorsman's",
-      "asin": "B0GMX5D4Y1",
-      "status": "live",
-      "cover": null,
-      "description": "Farming, trucking, railroading, logging"
-    },
+  "working-life-collection": [
     {
       "title": "Built With Hands: Boomer Edition",
       "asin": "B0GN98P31F",
+      "etsyUrl": "https://www.etsy.com/ca/listing/4457776635/built-with-hands-boomer-edition-memory",
       "status": "live",
-      "cover": null,
-      "description": "Tradesman's coloring book: 1970s & 80s trades (Carpenter, Mechanic, Welder, Painter)",
-      "launchDate": "2026-02-13"
+      "cover": "built-with-hands-boomer.png"
+    },
+    {
+      "title": "Built With Hands: Vintage 1950s Trades",
+      "asin": "B0GMXB29GZ",
+      "etsyUrl": "",
+      "status": "live",
+      "cover": null
     },
     {
       "title": "The Open Road & Field: Boomer Edition",
       "asin": "B0GN9XPXFK",
+      "etsyUrl": "https://www.etsy.com/ca/listing/4458204309/the-open-road-field-boomer-edition",
       "status": "live",
-      "cover": null,
-      "description": "Outdoorsman's coloring book: 1970s & 80s rural trades (Farmer, Trucker, Railroader, Heavy Equipment)",
-      "launchDate": "2026-02-13"
+      "cover": "open-road-boomer.png"
+    },
+    {
+      "title": "The Open Road & Field: Outdoorsman's",
+      "asin": "B0GMX5D4Y1",
+      "etsyUrl": "",
+      "status": "live",
+      "cover": null
     },
     {
       "title": "Service & Uniform: Boomer Edition",
       "asin": "B0GN9F3W73",
+      "etsyUrl": "https://www.etsy.com/ca/listing/4458214992/service-uniform-boomer-edition-memory",
       "status": "live",
-      "cover": null,
-      "description": "Community hero's coloring book: 1970s & 80s first responders (Coast Guard, Police, Firefighter, Paramedic)",
-      "launchDate": "2026-02-13"
+      "cover": "service-uniform-boomer.png"
     },
     {
       "title": "Service & Uniform: Vintage 1950s",
-      "asin": null,
-      "status": "pending",
-      "cover": null,
-      "description": "Service professions coloring book"
+      "asin": "B0GN38NLPY",
+      "etsyUrl": "",
+      "status": "live",
+      "cover": null
     }
   ],
-  "fishing": [
+  "bold-easy-collection": [
     {
       "title": "Bold & Easy Bass Fishing",
       "asin": "B0GL1RR48J",
+      "etsyUrl": "",
       "status": "live",
       "cover": "big bold bass cover.png"
     },
     {
       "title": "Bold & Easy Trout Fishing",
       "asin": "B0GHQPZLYZ",
+      "etsyUrl": "",
       "status": "live",
       "cover": "bold-easy-trout.jpg"
     },
     {
       "title": "Bold & Easy Saltwater Fishing",
       "asin": "B0GLNDM6MC",
+      "etsyUrl": "",
       "status": "live",
       "cover": "bold-easy-saltwater.jpg"
-    }
-  ],
-  "gothic": [
-    {
-      "title": "Rococo Goth Manor",
-      "asin": "B0GGYZMGJ5",
-      "status": "live",
-      "cover": "rococo-goth.jpg"
-    },
-    {
-      "title": "The Watchers: Descent",
-      "asin": null,
-      "status": "unknown",
-      "cover": "watchers-1-descent.jpg"
-    },
-    {
-      "title": "The Watchers: Cosmic Keys",
-      "asin": "B0GHQNNKWD",
-      "status": "live",
-      "cover": "watchers-2-cosmic-keys.jpg"
-    },
-    {
-      "title": "The Watchers: Animal Apocalypse",
-      "asin": "B0GJ3NTLDX",
-      "status": "live",
-      "cover": "watchers-3-animal-apocalypse.jpg"
-    },
-    {
-      "title": "The Watchers: Thrones of Fire",
-      "asin": "B0GHS8GF71",
-      "status": "live",
-      "cover": "watchers-4-thrones-of-fire.jpg"
-    }
-  ],
-  "kawaii": [
-    {
-      "title": "Gourmet Ghouls",
-      "asin": "B0GKDM79CL",
-      "status": "live",
-      "cover": "gourmet-ghouls.jpg"
-    },
-    {
-      "title": "Crittercore Chronicles",
-      "asin": "B0GHJ6WXKD",
-      "status": "live",
-      "cover": "crittercore.jpg"
     }
   ]
 }

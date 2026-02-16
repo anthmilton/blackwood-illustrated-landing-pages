@@ -3,42 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blackwood Illustrated | Thoughtful Coloring Books</title>
-    <meta name="description" content="Publisher of AI-generated coloring books for Memory Care, Gothic aesthetics, and Kawaii whimsy.">
-    
-    <!-- GOOGLE FONTS -->
+    <meta name="description" content="Therapeutic coloring books for memory care. Large print, era-accurate themes designed for seniors with dementia and Alzheimer's. Shop our complete collection.">
+    <title>Memory Bridge Books by Margaret Whitmore | Therapeutic Coloring for Memory Care</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
-    </style>
-
-    <!-- FAVICON (Embedded SVG) -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='64' height='64' rx='8' fill='%232D2D2D'/%3E%3Cg transform='translate(14, 12) scale(0.35)'%3E%3Cpath d='M45,80 Q50,40 35,10 L35,15 Q40,50 45,90 Q50,110 40,120 L60,120 Q50,110 55,90 Q60,50 65,15 L65,10 Q50,40 55,80 Z' fill='%23F5F1E8'/%3E%3Cpath d='M35,15 Q10,10 0,35 Q5,55 35,50 Z' fill='%23D4AF37'/%3E%3Cpath d='M65,15 Q90,10 100,35 Q95,55 65,50 Z' fill='%23D4AF37'/%3E%3C/g%3E%3C/svg%3E" type="image/svg+xml">
-
-    <style>
-        /* =========================================
-           CSS VARIABLES & BRAND COLORS
-        ========================================= */
-        :root {
-            /* Brand Palette */
-            --color-primary: #2D2D2D;      /* Ink Charcoal */
-            --color-bg: #F5F1E8;           /* Antique Vellum */
-            --color-accent-a: #D4AF37;     /* Gilded Leaf */
-            --color-accent-b: #8B4513;     /* Leather Bound */
-            --color-neutral: #999999;      /* Stone Gray */
-
-            /* Typography */
-            --font-heading: 'Playfair Display', serif;
-            --font-body: 'Inter', sans-serif;
-
-            /* Layout */
-            --container-width: 1200px;
-            --spacing-section: 5rem;
-            --border-radius: 4px;
-        }
-
-        /* =========================================
-           RESET & BASE STYLES
-        ========================================= */
         * {
             margin: 0;
             padding: 0;
@@ -46,591 +13,384 @@
         }
 
         body {
-            font-family: var(--font-body);
-            color: var(--color-primary);
+            font-family: 'Georgia', serif;
+            background-color: #F5F1E8;
+            color: #2D2D2D;
             line-height: 1.6;
-            overflow-x: hidden;
         }
 
-        /* Paper Texture Background */
-        .paper-bg {
-            background-color: var(--color-bg);
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+        header {
+            background-color: #2D2D2D;
+            color: #F5F1E8;
+            padding: 2rem 1rem;
+            text-align: center;
         }
 
-        a {
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #D4AF37;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #3D3D3D;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #F5F1E8;
             text-decoration: none;
-            color: inherit;
-            transition: color 0.3s ease;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        h1, h2, h3, h4 {
-            font-family: var(--font-heading);
-            font-weight: 700;
-        }
-
-        .container {
-            max-width: var(--container-width);
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 28px;
-            font-family: var(--font-body);
-            font-weight: 500;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            border: 1px solid var(--color-primary);
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .btn-primary {
-            background-color: var(--color-primary);
-            color: var(--color-accent-a);
-            border-color: var(--color-primary);
-        }
-
-        .btn-primary:hover {
-            background-color: transparent;
-            color: var(--color-primary);
-        }
-
-        .btn-outline {
-            background-color: transparent;
-            color: var(--color-primary);
-            border-color: var(--color-primary);
-        }
-
-        .btn-outline:hover {
-            background-color: var(--color-primary);
-            color: var(--color-accent-a);
-        }
-
-        /* Decorative Divider Utility */
-        .divider-svg {
-            display: block;
-            width: 100%;
-            max-width: 300px;
-            margin: 2rem auto;
-            height: 20px;
-        }
-
-        /* =========================================
-           HEADER & NAVIGATION
-        ========================================= */
-        header.main-header {
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background: rgba(245, 241, 232, 0.95); /* Semi-transparent vellum */
-            backdrop-filter: blur(5px);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* Logo Sizing Updated for Horizontal Layout */
-        .logo-wrapper svg {
-            height: 55px; /* Optimised for horizontal logo */
-            width: auto;
-            display: block;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 40px;
-        }
-
-        .nav-links a {
-            font-family: var(--font-heading);
+            margin: 0 1.5rem;
             font-size: 1.1rem;
-            color: var(--color-primary);
-            position: relative;
+            transition: color 0.3s;
         }
 
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 1px;
-            bottom: -5px;
-            left: 0;
-            background-color: var(--color-accent-a);
-            transition: width 0.3s ease;
+        nav a:hover {
+            color: #D4AF37;
         }
 
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .mobile-toggle {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        /* =========================================
-           HERO SECTION
-        ========================================= */
         .hero {
-            padding: 8rem 0 4rem;
+            background: linear-gradient(135deg, #6B9AC4 0%, #8BB4D9 100%);
+            color: white;
+            padding: 4rem 1rem;
             text-align: center;
         }
 
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-            color: var(--color-primary);
-        }
-
-        .hero p.subheadline {
-            font-size: 1.25rem;
-            color: var(--color-accent-b);
-            max-width: 700px;
-            margin: 0 auto 3rem;
-            font-weight: 400;
-        }
-
-        /* =========================================
-           CATEGORY CARDS
-        ========================================= */
-        .collections {
-            padding: var(--spacing-section) 0;
-        }
-
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 40px;
-            margin-top: 2rem;
-        }
-
-        .card {
-            background: #fff;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(45, 45, 45, 0.08);
-            border-color: var(--color-accent-a);
-        }
-
-        .card-visual {
-            height: 250px;
-            width: 100%;
-            background-color: #eee;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .visual-memory {
-            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-        }
-
-        .visual-gothic {
-            background: linear-gradient(135deg, #424242 0%, #212121 100%);
-        }
-
-        .visual-kawaii {
-            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
-        }
-
-        .card-content {
-            padding: 2.5rem;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .card-tagline {
-            font-family: var(--font-body);
-            color: var(--color-accent-a);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 0.75rem;
-            margin-bottom: 0.75rem;
-            font-weight: 600;
-        }
-
-        .card h3 {
-            font-size: 1.75rem;
-            margin-bottom: 1rem;
-            color: var(--color-primary);
-        }
-
-        .card p {
-            color: #555;
-            font-size: 1rem;
-            margin-bottom: 2rem;
-            flex-grow: 1;
-        }
-
-        /* =========================================
-           ABOUT SECTION
-        ========================================= */
-        .about-section {
-            padding: var(--spacing-section) 0;
-            background-color: rgba(255, 255, 255, 0.5);
-            border-top: 1px solid rgba(212, 175, 55, 0.2);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-        }
-
-        .about-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .about-header h2 {
+        .hero h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
         }
 
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            text-align: center;
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
         }
 
-        .feature-item svg {
-            width: 48px;
-            height: 48px;
-            margin-bottom: 1.5rem;
-            fill: var(--color-accent-b);
-        }
-
-        .feature-item h4 {
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .feature-item p {
-            color: #666;
-            font-size: 0.95rem;
-        }
-
-        /* =========================================
-           FOOTER
-        ========================================= */
-        footer {
-            background-color: var(--color-primary);
-            color: var(--color-bg);
-            padding: 4rem 0 2rem;
-            text-align: center;
-        }
-
-        .footer-logo svg {
-            height: 100px;
-            width: auto;
-            margin-bottom: 2rem;
-        }
-
-        /* Override logo colors for footer */
-        .footer-logo text {
-            fill: #F5F1E8;
-        }
-
-        .footer-logo path[stroke="#F5F1E8"] {
-            stroke: #2D2D2D;
-        }
-
-        .footer-logo path[fill="#2D2D2D"] {
-            fill: #F5F1E8;
-        }
-
-        .footer-links {
-            margin-bottom: 2rem;
+        .hero-buttons {
             display: flex;
+            gap: 1rem;
             justify-content: center;
-            gap: 30px;
             flex-wrap: wrap;
         }
 
-        .footer-links a {
-            color: var(--color-bg);
-            font-family: var(--font-heading);
-            letter-spacing: 1px;
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
         }
 
-        .footer-links a:hover {
-            color: var(--color-accent-a);
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
 
-        .copyright {
-            color: var(--color-neutral);
-            font-size: 0.85rem;
+        .btn-amazon {
+            background-color: #232F3E;
+            color: white;
+        }
+
+        .btn-etsy {
+            background-color: #F16521;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            color: #2D2D2D;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-header .badge {
+            display: inline-block;
+            background-color: #D4AF37;
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-left: 0.5rem;
+            font-weight: bold;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
             margin-top: 2rem;
-            border-top: 1px solid #444;
-            padding-top: 2rem;
         }
 
-        /* =========================================
-           RESPONSIVE
-        ========================================= */
+        .book-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .book-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .book-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #2D2D2D;
+        }
+
+        .book-card p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1rem;
+            min-height: 60px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .book-card .btn {
+            padding: 0.6rem 1.2rem;
+            font-size: 0.95rem;
+            flex: 1;
+            min-width: 100px;
+        }
+
+        .placeholder-cover {
+            width: 100%;
+            height: 350px;
+            background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #2D2D2D;
+            color: #F5F1E8;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        footer .footer-links {
+            margin-top: 1.5rem;
+        }
+
+        footer a {
+            color: #D4AF37;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #F5F1E8;
+        }
+
+        .groundwood-banner {
+            background-color: #6B9AC4;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
         @media (max-width: 768px) {
-            .mobile-toggle {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            nav a {
                 display: block;
+                margin: 0.5rem 0;
             }
 
-            .logo-wrapper svg {
-                /* Responsive adjustment for wider logo */
-                height: 40px;
-            }
-
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: var(--color-bg);
-                padding: 20px;
-                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-                border-bottom: 1px solid var(--color-accent-a);
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .card-visual {
-                height: 200px;
+            .book-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
-
-<body class="paper-bg">
-
-    <!-- NAVIGATION -->
-    <header class="main-header">
-        <div class="container nav-container">
-            <a href="#" class="logo-wrapper">
-                <!-- NEW HORIZONTAL HEADER LOGO -->
-                <svg width="400" height="80" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Icon -->
-                    <g transform="translate(20, 10) scale(0.5)" fill="#2D2D2D">
-                        <path d="M45,80 Q50,40 35,10 L35,15 Q40,50 45,90 Q50,110 40,120 L60,120 Q50,110 55,90 Q60,50 65,15 L65,10 Q50,40 55,80 Z" />
-                        <path d="M35,15 Q10,10 0,35 Q5,55 35,50 Z" fill="#D4AF37"/>
-                        <path d="M65,15 Q90,10 100,35 Q95,55 65,50 Z" fill="#D4AF37"/>
-                    </g>
-                    <!-- Text (Mapped to Site Fonts) -->
-                    <text x="85" y="48" style="font-family: var(--font-heading);" font-size="36" fill="#2D2D2D" letter-spacing="1">BLACKWOOD</text>
-                    <text x="320" y="48" style="font-family: var(--font-body);" font-size="14" fill="#8B4513" letter-spacing="2" text-transform="uppercase">Illustrated</text>
-                </svg>
-            </a>
-            <nav>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="memorycare.html">Memory Care</a></li>
-                    <li><a href="bass-fishing.html">Bass Fishing</a></li>
-                    <li><a href="gothic.html">Gothic</a></li>
-                    <li><a href="kawaii.html">Kawaii</a></li>
-                    <li><a href="#collections" style="color: var(--color-accent-b); font-weight: bold;">Shop All</a></li>
-                </ul>
-            </nav>
-            <div class="mobile-toggle" onclick="toggleMenu()">
-                &#9776; <!-- Simple Hamburger Icon -->
-            </div>
-        </div>
+<body>
+    <header>
+        <h1>Memory Bridge Books</h1>
+        <p>by Margaret Whitmore</p>
     </header>
 
-    <!-- HERO SECTION -->
+    <nav>
+        <a href="#classic">Classic Memories</a>
+        <a href="#working-life">Working Life</a>
+        <a href="#outdoor">Outdoor Adventures</a>
+        <a href="https://www.amazon.com/author/memorybridgebooks" target="_blank">Amazon</a>
+    </nav>
+
+    <div class="groundwood-banner">
+        🌲 Printed on recycled, groundwood paper for authentic vintage texture
+    </div>
+
     <section class="hero">
-        <div class="container">
-            <h1>Thoughtfully Illustrated Books<br>for Every Generation</h1>
-            <p class="subheadline">From therapeutic memory care activities to gothic elegance to kawaii whimsy — discover coloring books with purpose and personality.</p>
-            <a href="#collections" class="btn btn-primary">Explore Our Collections</a>
-            
-            <!-- DECORATIVE DIVIDER -->
-            <div style="margin-top: 4rem;">
-                <svg class="divider-svg" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                    <path d="M0,10 L90,10 M110,10 L200,10" stroke="#D4AF37" stroke-width="1"/>
-                    <rect x="95" y="5" width="10" height="10" transform="rotate(45 100 10)" fill="#2D2D2D"/>
-                </svg>
-            </div>
+        <h2>Therapeutic Coloring Books That Honor Dignity</h2>
+        <p>Designed specifically for seniors with dementia and Alzheimer's. Large print, era-accurate themes, dignified content that reconnects to cherished memories.</p>
+        <div class="hero-buttons">
+            <a href="https://www.amazon.com/author/memorybridgebooks" target="_blank" class="btn btn-amazon">Shop on Amazon</a>
+            <a href="https://www.etsy.com/shop/MemoryBridgeBooks" target="_blank" class="btn btn-etsy">Shop on Etsy</a>
         </div>
     </section>
 
-    <!-- COLLECTIONS GRID -->
-    <section id="collections" class="collections">
-        <div class="container">
-            <div class="card-grid">
-
-                <!-- CARD 1: MEMORY CARE -->
-                <article class="card">
-                    <div class="card-visual visual-memory">
-                        <!-- Abstract Representation of Peace/Nature -->
-                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50 85C69.33 85 85 69.33 85 50C85 30.67 69.33 15 50 15C30.67 15 15 30.67 15 50C15 69.33 30.67 85 50 85Z" stroke="#2D2D2D" stroke-opacity="0.2" stroke-width="2"/>
-                            <path d="M50 25V75M25 50H75" stroke="#2D2D2D" stroke-opacity="0.2" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-tagline">Comfort Through Creativity</span>
-                        <h3>Memory Care & Senior Activities</h3>
-                        <p>Large print, tremor-friendly designs for seniors. Nostalgic 1950s themes and peaceful fishing scenes designed for memory care.</p>
-                        <a href="memorycare.html" class="btn btn-outline">Explore Memory Care</a>
-                    </div>
-                </article>
-
-                <!-- CARD 2: BASS FISHING (New) -->
-                <article class="card">
-                    <div class="card-visual" style="background: linear-gradient(135deg, #a8c5c5 0%, #7BA8A8 100%);">
-                        <!-- Fish Icon -->
-                        <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" stroke="#2D2D2D" stroke-opacity="0.3" stroke-width="2"/>
-                            <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#2D2D2D" stroke-opacity="0.3" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-tagline">Lunkers & Lakes</span>
-                        <h3>Bass Fishing Collection</h3>
-                        <p>Bold & Easy fishing scenes for seniors, plus Kayak Fishing adventures for the grandkids. Share the passion across generations.</p>
-                        <a href="bass-fishing.html" class="btn btn-outline">Explore Fishing Books</a>
-                    </div>
-                </article>
-
-                <!-- CARD 3: GOTHIC -->
-                <article class="card">
-                    <div class="card-visual visual-gothic">
-                        <!-- Abstract Representation of Ornate/Dark -->
-                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50 10L60 40H90L65 60L75 90L50 70L25 90L35 60L10 40H40L50 10Z" stroke="#D4AF37" stroke-width="1"/>
-                        </svg>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-tagline">Embrace the Beautiful Darkness</span>
-                        <h3>Gothic & Dark Elegance</h3>
-                        <p>Rococo fashion meets Victorian hauntings. Intricate, elegant illustrations for those who love the darker side of beauty.</p>
-                        <a href="gothic.html" class="btn btn-outline">Explore Gothic Books</a>
-                    </div>
-                </article>
-
-                <!-- CARD 4: KAWAII -->
-                <article class="card">
-                    <div class="card-visual visual-kawaii">
-                        <!-- Abstract Representation of Whimsy -->
-                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="35" cy="45" r="5" fill="#2D2D2D" fill-opacity="0.2"/>
-                            <circle cx="65" cy="45" r="5" fill="#2D2D2D" fill-opacity="0.2"/>
-                            <path d="M40 65Q50 75 60 65" stroke="#2D2D2D" stroke-opacity="0.2" stroke-width="3" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-tagline">Adorably Whimsical Worlds</span>
-                        <h3>Kawaii & Cottagecore</h3>
-                        <p>Cute food monsters, cozy bug companions, and magical adventures. Perfectly spooky without scary for ages 8-12.</p>
-                        <a href="kawaii.html" class="btn btn-outline">Explore Kawaii Books</a>
-                    </div>
-                </article>
-
+    <div class="container">
+        <!-- Classic Memory Care Section -->
+        <section class="section" id="classic">
+            <div class="section-header">
+                <h2>1950s Nostalgia & Americana</h2>
+                <p>Classic cars, small-town memories, and simpler times. Perfect for seniors born in the 1930s-1950s.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section class="about-section" id="about">
-        <div class="container">
-            <div class="about-header">
-                <h2>Why Blackwood Illustrated?</h2>
-                <svg class="divider-svg" style="max-width: 100px; margin-top: 1rem;" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                    <path d="M0,10 L90,10 M110,10 L200,10" stroke="#D4AF37" stroke-width="1"/>
-                    <rect x="95" y="5" width="10" height="10" transform="rotate(45 100 10)" fill="#2D2D2D"/>
-                </svg>
+            <div class="book-grid" id="classic-books">
+                <!-- Books will be loaded here -->
             </div>
+        </section>
 
-            <div class="features-grid">
-                <div class="feature-item">
-                    <!-- Icon: Art/AI -->
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
-                    <h4>AI-Assisted Artistry</h4>
-                    <p>Unique, never-before-seen illustrations curated and refined for maximum coloring enjoyment.</p>
-                </div>
-
-                <div class="feature-item">
-                    <!-- Icon: Heart/Purpose -->
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-                    <h4>Purposefully Designed</h4>
-                    <p>Whether for therapeutic memory care or creative escapism, every book serves a specific need.</p>
-                </div>
-
-                <div class="feature-item">
-                    <!-- Icon: Box/Amazon -->
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 8h-3V4H3v14h18V8zM5 6h10v2H5V6zm13 10H5v-2h13v2zm0-4H5v-2h13v2z"/></svg>
-                    <h4>Trusted Delivery</h4>
-                    <p>Printed and shipped rapidly via Amazon, ensuring quality paper and reliable service.</p>
-                </div>
+        <!-- Working Life Collection Section -->
+        <section class="section" id="working-life">
+            <div class="section-header">
+                <h2>Activities for Men with Dementia <span class="badge">OUR DIFFERENTIATOR</span></h2>
+                <p>Honoring tradesmen, factory workers, farmers, truckers, and first responders. Reconnect to occupational identity.</p>
             </div>
-        </div>
-    </section>
+            <div class="book-grid" id="working-life-books">
+                <!-- Books will be loaded here -->
+            </div>
+        </section>
 
-    <!-- FOOTER -->
+        <!-- Bold & Easy Collection Section -->
+        <section class="section" id="outdoor">
+            <div class="section-header">
+                <h2>Fishing & Outdoor Memories</h2>
+                <p>For seniors who loved the water and the outdoors. Large-format designs perfect for trembling hands.</p>
+            </div>
+            <div class="book-grid" id="outdoor-books">
+                <!-- Books will be loaded here -->
+            </div>
+        </section>
+    </div>
+
     <footer>
-        <div class="container">
-
-            <!-- Footer Logo (Kept vertical for best fit in footer layout) -->
-            <div class="footer-logo">
-                <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                    <g transform="translate(100, 60)" fill="#F5F1E8">
-                        <path d="M45,80 Q50,40 35,10 L35,15 Q40,50 45,90 Q50,110 40,120 L60,120 Q50,110 55,90 Q60,50 65,15 L65,10 Q50,40 55,80 Z" />
-                        <path d="M35,15 Q10,10 0,35 Q5,55 35,50 Z" fill="#D4AF37"/>
-                        <path d="M65,15 Q90,10 100,35 Q95,55 65,50 Z" fill="#D4AF37"/>
-                        <path d="M50,10 L50,60" stroke="#2D2D2D" stroke-width="2"/>
-                    </g>
-                    <text x="150" y="210" font-family="'Playfair Display', serif" font-size="32" text-anchor="middle" fill="#F5F1E8" letter-spacing="2">BLACKWOOD</text>
-                    <text x="150" y="240" font-family="'Inter', sans-serif" font-size="14" text-anchor="middle" fill="#D4AF37" letter-spacing="4" text-transform="uppercase">Illustrated</text>
-                    <line x1="100" y1="260" x2="200" y2="260" stroke="#D4AF37" stroke-width="1"/>
-                </svg>
-            </div>
-
-            <div class="footer-links">
-                <a href="#">Amazon Store</a>
-                <a href="#">Pinterest</a>
-                <a href="#" style="opacity: 0.6; cursor: default;">Etsy (Coming Soon)</a>
-                <a href="#">Contact</a>
-            </div>
-
-            <p class="copyright">
-                © 2026 Blackwood Illustrated. Illustrations with intention. | <a href="privacy.html" style="color: inherit; text-decoration: underline;">Privacy Policy</a>
-            </p>
+        <p>&copy; 2026 Memory Bridge Books. All rights reserved.</p>
+        <p style="margin-top: 1rem; font-style: italic;">Margaret Whitmore • Therapeutic Coloring for Memory Care</p>
+        <div class="footer-links">
+            <a href="https://www.amazon.com/author/memorybridgebooks" target="_blank">Amazon Author Central</a>
+            <a href="https://www.etsy.com/shop/MemoryBridgeBooks" target="_blank">Etsy Shop</a>
+            <a href="privacy.html">Privacy Policy</a>
         </div>
     </footer>
 
-    <!-- MOBILE MENU SCRIPT -->
     <script>
-        function toggleMenu() {
-            var nav = document.getElementById("navLinks");
-            nav.classList.toggle("active");
+        // Load books from JSON
+        fetch('books.json')
+            .then(response => response.json())
+            .then(data => {
+                renderBooks(data['memory-care-classic'], 'classic-books');
+                renderBooks(data['working-life-collection'], 'working-life-books');
+                renderBooks(data['bold-easy-collection'], 'outdoor-books');
+            })
+            .catch(error => console.error('Error loading books:', error));
+
+        function renderBooks(books, containerId) {
+            const container = document.getElementById(containerId);
+            
+            books.forEach(book => {
+                const card = document.createElement('div');
+                card.className = 'book-card';
+                
+                // Cover image or placeholder
+                let coverHTML;
+                if (book.cover) {
+                    coverHTML = `<img src="${book.cover}" alt="${book.title}">`;
+                } else {
+                    coverHTML = `<div class="placeholder-cover">Cover Coming Soon</div>`;
+                }
+                
+                // Description (optional)
+                const description = book.description || '';
+                
+                // Amazon button
+                const amazonButton = book.asin 
+                    ? `<a href="https://www.amazon.com/dp/${book.asin}" target="_blank" class="btn btn-amazon">Amazon</a>`
+                    : '';
+                
+                // Etsy button (only if URL exists)
+                const etsyButton = book.etsyUrl 
+                    ? `<a href="${book.etsyUrl}" target="_blank" class="btn btn-etsy">Etsy</a>`
+                    : '';
+                
+                card.innerHTML = `
+                    ${coverHTML}
+                    <h3>${book.title}</h3>
+                    <p>${description}</p>
+                    <div class="button-group">
+                        ${amazonButton}
+                        ${etsyButton}
+                    </div>
+                `;
+                
+                container.appendChild(card);
+            });
         }
     </script>
-
 </body>
 </html>
