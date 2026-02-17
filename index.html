@@ -52,10 +52,50 @@
         }
 
         .hero {
-            background: linear-gradient(135deg, #6B9AC4 0%, #8BB4D9 100%);
+            position: relative;
             color: white;
             padding: 4rem 1rem;
             text-align: center;
+            overflow: hidden;
+        }
+
+        .carousel-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .carousel-bg img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+
+        .carousel-bg img.active {
+            opacity: 0.3;
+        }
+
+        .carousel-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(107, 154, 196, 0.85) 0%, rgba(139, 180, 217, 0.85) 100%);
+            z-index: 1;
+        }
+
+        .hero > * {
+            position: relative;
+            z-index: 2;
         }
 
         .hero h2 {
@@ -282,6 +322,13 @@
     </nav>
 
     <section class="hero">
+        <div class="carousel-bg">
+            <img src="carousel-1.jpg" alt="Fishing Books" class="active">
+            <img src="carousel-2.jpg" alt="Classic Memory Care Books">
+            <img src="carousel-3.jpg" alt="Boomer Occupational Books">
+            <img src="carousel-4.jpg" alt="Vintage Occupational Books">
+        </div>
+        <div class="carousel-overlay"></div>
         <h2>Therapeutic Coloring Books That Honor Dignity</h2>
         <p>Designed specifically for seniors with dementia and Alzheimer's. Large print, era-accurate themes, dignified content that reconnects to cherished memories.</p>
         <div class="hero-buttons">
@@ -414,6 +461,24 @@
                 container.appendChild(card);
             });
         }
+
+        // Carousel rotation
+        const carouselImages = document.querySelectorAll('.carousel-bg img');
+        let currentImageIndex = 0;
+
+        function rotateCarousel() {
+            // Remove active class from current image
+            carouselImages[currentImageIndex].classList.remove('active');
+            
+            // Move to next image (loop back to 0 after last)
+            currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
+            
+            // Add active class to new image
+            carouselImages[currentImageIndex].classList.add('active');
+        }
+
+        // Rotate every 5 seconds
+        setInterval(rotateCarousel, 5000);
     </script>
 </body>
 </html>
