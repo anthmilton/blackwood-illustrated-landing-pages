@@ -265,6 +265,15 @@
             .book-grid {
                 grid-template-columns: 1fr;
             }
+
+            #about > div {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+            }
+
+            #about h2 {
+                font-size: 1.8rem !important;
+            }
         }
     </style>
 </head>
@@ -278,6 +287,7 @@
         <a href="#classic">Classic Memories</a>
         <a href="#working-life">Working Life</a>
         <a href="#outdoor">Outdoor Adventures</a>
+        <a href="#about">About Margaret</a>
         <a href="https://www.amazon.com/author/memorybridgebooks" target="_blank">Amazon</a>
     </nav>
 
@@ -325,6 +335,30 @@
             </div>
             <div class="book-grid" id="outdoor-books">
                 <!-- Books will be loaded here -->
+            </div>
+        </section>
+
+        <!-- About Margaret Section -->
+        <section class="section" id="about" style="background-color: white; padding: 4rem 2rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center; max-width: 1000px; margin: 0 auto;">
+                <div class="author-photo">
+                    <img src="margaret-whitmore.jpg" alt="Margaret Whitmore" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                </div>
+                <div class="author-bio">
+                    <h2 style="font-size: 2.2rem; margin-bottom: 1.5rem; color: #2D2D2D;">About Margaret Whitmore</h2>
+                    <p style="color: #555; line-height: 1.8; margin-bottom: 1rem;">
+                        Margaret Whitmore is the creator of <strong>Memory Bridge Books</strong>, a therapeutic coloring book series designed specifically for seniors with dementia and Alzheimer's. Drawing from caregiver experience and reminiscence therapy research, Margaret recognized a critical gap: most coloring books for seniors were either too childish or too complex.
+                    </p>
+                    <p style="color: #555; line-height: 1.8; margin-bottom: 1rem;">
+                        Memory Bridge Books features large-format designs with bold outlines and era-accurate imagery from the 1950s-1980s. Each book is carefully researched to trigger positive long-term memories while respecting dignity and identity. Nostalgic themes—classic cars, small-town Main Streets, and blue-collar workplaces—are chosen because these memories often remain intact even in late-stage dementia.
+                    </p>
+                    <p style="color: #555; line-height: 1.8; margin-bottom: 1rem;">
+                        Margaret's <strong>Working Life Collection</strong> breaks new ground by serving men with dementia—a massively underserved population. Books like "Built With Hands" honor the carpenter who lights up when he sees familiar tools, or the trucker who still remembers his first big rig.
+                    </p>
+                    <p style="color: #666; line-height: 1.8; font-style: italic; border-left: 3px solid #D4AF37; padding-left: 1rem;">
+                        The Memory Bridge philosophy: Every person deserves activities that honor who they were, not just what they've lost.
+                    </p>
+                </div>
             </div>
         </section>
     </div>
