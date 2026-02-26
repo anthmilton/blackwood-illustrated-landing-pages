@@ -66,6 +66,43 @@
       "cover": "service-uniform-vintage.png"
     }
   ],
+  "womens-working-life": [
+    {
+      "title": "Needle & Thread: Boomer Edition",
+      "asin": "B0GPKMZ4HM",
+      "etsyUrl": "https://www.etsy.com/ca/listing/4462121252/needle-and-thread-1970s-80s-sewing",
+      "status": "live",
+      "cover": "needle-thread-boomer.png"
+    },
+    {
+      "title": "The Kitchen Table: Boomer Edition",
+      "asin": "B0GPKP4RK9",
+      "etsyUrl": "https://www.etsy.com/ca/listing/4462114951/kitchen-table-1970s-80s-home-cook",
+      "status": "live",
+      "cover": "kitchen-table-boomer.png"
+    },
+    {
+      "title": "In Uniform: Boomer Edition",
+      "asin": "B0GPKGRPT3",
+      "etsyUrl": "https://www.etsy.com/ca/listing/4462121689/in-uniform-1970s-80s-professional-women",
+      "status": "live",
+      "cover": "in-uniform-boomer.png"
+    },
+    {
+      "title": "The Garden Gate: Boomer Edition",
+      "asin": "B0GPJPCK8G",
+      "etsyUrl": "https://www.etsy.com/ca/listing/4462123764/garden-gate-1970s-80s-vegetable-flower",
+      "status": "live",
+      "cover": "garden-gate-boomer.png"
+    },
+    {
+      "title": "The Beauty Shop: Boomer Edition",
+      "asin": "B0GPJRFBRP",
+      "etsyUrl": "https://www.etsy.com/ca/listing/4462123609/beauty-shop-1970s-80s-salon-diner",
+      "status": "live",
+      "cover": "beauty-shop-boomer.png"
+    }
+  ],
   "bold-easy-collection": [
     {
       "title": "Bold & Easy Bass Fishing",

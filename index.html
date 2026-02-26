@@ -326,7 +326,8 @@
 
     <nav>
         <a href="#classic">Classic Memories</a>
-        <a href="#working-life">Working Life</a>
+        <a href="#working-life">Working Life (Men)</a>
+        <a href="#womens-life">Working Life (Women)</a>
         <a href="#outdoor">Outdoor Adventures</a>
         <a href="#about">About Margaret</a>
         <a href="https://www.amazon.com/author/memorybridgebooks" target="_blank">Amazon</a>
@@ -360,13 +361,24 @@
             </div>
         </section>
 
-        <!-- Working Life Collection Section -->
+        <!-- Working Life Collection Section (Men) -->
         <section class="section" id="working-life">
             <div class="section-header">
                 <h2>Activities for Men with Dementia <span class="badge">OUR DIFFERENTIATOR</span></h2>
                 <p>Honoring tradesmen, factory workers, farmers, truckers, and first responders. Reconnect to occupational identity.</p>
             </div>
             <div class="book-grid" id="working-life-books">
+                <!-- Books will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Women's Working Life Collection Section -->
+        <section class="section" id="womens-life">
+            <div class="section-header">
+                <h2>Women's Working Life: Boomer Edition</h2>
+                <p>Celebrating homemakers, seamstresses, professional women, gardeners, and service workers. Era-accurate themes from the 1970s & 80s.</p>
+            </div>
+            <div class="book-grid" id="womens-life-books">
                 <!-- Books will be loaded here -->
             </div>
         </section>
@@ -427,6 +439,7 @@
             .then(data => {
                 renderBooks(data['memory-care-classic'], 'classic-books');
                 renderBooks(data['working-life-collection'], 'working-life-books');
+                renderBooks(data['womens-working-life'], 'womens-life-books');
                 renderBooks(data['bold-easy-collection'], 'outdoor-books');
             })
             .catch(error => console.error('Error loading books:', error));
