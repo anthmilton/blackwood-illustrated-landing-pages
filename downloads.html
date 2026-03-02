@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Downloads | Blackwood Illustrated</title>
+    <meta name="description" content="Free downloadable resources for memory care activities - guides, printables, and sample pages.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #2D2D2D;
+            --color-bg: #F5F1E8;
+            --color-accent-a: #D4AF37;
+            --color-accent-b: #8B4513;
+            --color-neutral: #999999;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-primary);
+            line-height: 1.6;
+            background-color: var(--color-bg);
+        }
+
+        .paper-bg {
+            background-color: var(--color-bg);
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s ease;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--color-accent-a);
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #bfa030;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .btn-download {
+            background-color: var(--color-accent-b);
+        }
+
+        .btn-download:hover {
+            background-color: #6d3510;
+        }
+
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(45, 45, 45, 0.1);
+            background-color: rgba(245, 241, 232, 0.95);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tagline {
+            font-family: var(--font-heading);
+            color: var(--color-accent-b);
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-left: 20px;
+            color: var(--color-primary);
+        }
+
+        .hero {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .downloads-section {
+            padding: 40px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--color-accent-b);
+        }
+
+        .section-header p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .download-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 4px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .download-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .download-preview {
+            width: 100%;
+            height: 200px;
+            background: var(--color-bg);
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #eee;
+            overflow: hidden;
+        }
+
+        .download-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .download-preview .placeholder {
+            font-size: 3rem;
+            color: var(--color-neutral);
+        }
+
+        .download-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .download-card p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .download-meta {
+            font-size: 0.85rem;
+            color: var(--color-neutral);
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: var(--color-primary);
+            color: #fff;
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .tagline { display: none; }
+            .download-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body class="paper-bg">
+    <header>
+        <div class="container nav-wrapper">
+            <div class="header-logo">
+                <a href="hub.html" style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: bold;">BLACKWOOD Illustrated</a>
+            </div>
+            <span class="tagline">Free Resources</span>
+            <nav class="nav-links">
+                <a href="hub.html">Home</a>
+                <a href="memorycare.html">Memory Care</a>
+                <a href="downloads.html">Free Downloads</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Free Resources</h1>
+            <p>Helpful guides, printables, and sample pages to support meaningful activity time with your loved one.</p>
+        </div>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="downloads-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>📖 Activity Guide</h2>
+                <p>Learn how to make coloring time therapeutic and engaging</p>
+            </div>
+            <div class="download-grid">
+                <div class="download-card">
+                    <div class="download-preview">
+                        <span class="placeholder">📄</span>
+                    </div>
+                    <h3>Memory Bridge Activities Guide</h3>
+                    <p>A complete guide to using therapeutic coloring with loved ones experiencing memory loss. Includes conversation starters, activity ideas, and tips for creating meaningful moments.</p>
+                    <div class="download-meta">PDF • ~3.5 MB • 42 pages</div>
+                    <a href="../memory-bridge-guide-FINAL.pdf" download class="btn btn-download">Download Guide (Free)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Printables Section -->
+    <section class="downloads-section" style="background: rgba(255,255,255,0.3);">
+        <div class="container">
+            <div class="section-header">
+                <h2>🖨️ Printables</h2>
+                <p>Free coloring pages to get started right away</p>
+            </div>
+            <div class="download-grid">
+                <div class="download-card">
+                    <div class="download-preview">
+                        <span class="placeholder">🎨</span>
+                    </div>
+                    <h3>Sample Coloring Pages</h3>
+                    <p>Coming soon! Free printable pages from our Memory Care collection.</p>
+                    <div class="download-meta">PDF</div>
+                    <button class="btn" style="background: #ccc; cursor: not-allowed;" disabled>Coming Soon</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Pages Section -->
+    <section class="downloads-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>👀 Preview Samples</h2>
+                <p>See inside our books before you buy</p>
+            </div>
+            <div class="download-grid">
+                <div class="download-card">
+                    <div class="download-preview">
+                        <span class="placeholder">📖</span>
+                    </div>
+                    <h3>Built with His Hands</h3>
+                    <p>Preview pages from our carpenter-themed coloring book.</p>
+                    <div class="download-meta">PDF • Sample Pages</div>
+                    <a href="../memory-bridge-content-strategy/guide-preview-assets/sample-built-with-hands.pdf" download class="btn btn-download">Download Sample</a>
+                </div>
+                <div class="download-card">
+                    <div class="download-preview">
+                        <span class="placeholder">📖</span>
+                    </div>
+                    <h3>Kitchen Table Memories</h3>
+                    <p>Preview pages featuring nostalgic kitchen scenes.</p>
+                    <div class="download-meta">PDF • Sample Pages</div>
+                    <a href="../memory-bridge-content-strategy/guide-preview-assets/sample-kitchen-table.pdf" download class="btn btn-download">Download Sample</a>
+                </div>
+                <div class="download-card">
+                    <div class="download-preview">
+                        <span class="placeholder">📖</span>
+                    </div>
+                    <h3>Sunday Drive</h3>
+                    <p>Preview pages from our classic cars collection.</p>
+                    <div class="download-meta">PDF • Sample Pages</div>
+                    <a href="../memory-bridge-content-strategy/guide-preview-assets/sample-sunday-drive.pdf" download class="btn btn-download">Download Sample</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p style="margin-bottom: 15px;">Want the complete books? <a href="memorycare.html" style="color: var(--color-accent-a); text-decoration: underline; font-weight: 600;">Browse the Memory Care Collection →</a></p>
+            <p>© 2026 Blackwood Illustrated | <a href="/privacy.html" style="color: var(--color-accent-a); text-decoration: underline;">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>
