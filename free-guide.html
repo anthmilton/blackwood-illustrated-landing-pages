@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Guide: How to Use Coloring Activities to Connect with Loved Ones Living with Memory Loss | Memory Bridge Books</title>
+    <meta name="description" content="Free guide for caregivers: Learn how to use therapeutic coloring to create meaningful moments with loved ones experiencing dementia and Alzheimer's.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #2D2D2D;
+            --color-bg: #F5F1E8;
+            --color-accent-a: #D4AF37;
+            --color-accent-b: #8B4513;
+            --color-neutral: #999999;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-primary);
+            line-height: 1.6;
+            background-color: var(--color-bg);
+        }
+
+        .paper-bg {
+            background-color: var(--color-bg);
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s ease;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--color-accent-a);
+            color: #fff;
+            padding: 18px 48px;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #bfa030;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(45, 45, 45, 0.1);
+            background-color: rgba(245, 241, 232, 0.95);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-left: 20px;
+            color: var(--color-primary);
+        }
+
+        .hero {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero .subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .video-container {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .guide-banner {
+            max-width: 700px;
+            margin: 40px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .guide-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .content-section {
+            background: #fff;
+            padding: 60px 40px;
+            margin: 40px 0;
+            border-radius: 4px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .content-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            text-align: center;
+            color: var(--color-accent-b);
+        }
+
+        .content-section p {
+            font-size: 1.15rem;
+            margin-bottom: 20px;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+        }
+
+        .benefits-list li {
+            padding: 12px 0;
+            padding-left: 35px;
+            position: relative;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .benefits-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--color-accent-a);
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #D4AF37 0%, #bfa030 100%);
+            color: #fff;
+            padding: 50px 40px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .cta-box h3 {
+            font-size: 2.0rem;
+            margin-bottom: 15px;
+        }
+
+        .cta-box p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-box .btn {
+            background: #fff;
+            color: var(--color-accent-b);
+            font-size: 1.2rem;
+        }
+
+        .cta-box .btn:hover {
+            background: #f5f1e8;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: var(--color-primary);
+            color: #fff;
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--color-accent-a);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.0rem; }
+            .hero .subtitle { font-size: 1.05rem; }
+            .content-section { padding: 40px 25px; }
+            .content-section h2 { font-size: 1.7rem; }
+            .cta-box { padding: 35px 25px; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body class="paper-bg">
+    <header>
+        <div class="container nav-wrapper">
+            <div class="header-logo">
+                <a href="index.html" style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: bold;">Memory Bridge Books</a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="downloads.html">Free Resources</a>
+                <a href="https://www.amazon.com/author/memorybridgebooks">Our Books</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Free Guide: How to Use Coloring Activities to Connect with Loved Ones Living with Memory Loss</h1>
+            <p class="subtitle">A caregiver's handbook for using therapeutic coloring to create meaningful moments with loved ones experiencing dementia and Alzheimer's.</p>
+
+            <div class="video-container">
+                <video controls poster="gumroad-cover-memory-bridge-guide.png">
+                    <source src="margaret-video-intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <a href="https://memorybridgebooks.gumroad.com/l/memory-care-guide" class="btn">Get the Free Guide</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="guide-banner">
+            <img src="../OneShots/memory%20bridge%20banner%202.png" alt="The Memory Bridge Guide - A Caregiver's Handbook for Using Coloring Activities to Connect with Loved Ones Living with Memory Challenges">
+        </div>
+    </div>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>What's Inside the Complete Guide</h2>
+            
+            <p>The complete Memory Bridge Guide includes everything in the preview plus:</p>
+
+            <ul class="benefits-list">
+                <li>Step-by-step session instructions, from invitation to closing</li>
+                <li>How to read your loved one's nonverbal cues (the signs it's working and the signs to pause)</li>
+                <li>Conversation techniques using sensory memory triggers</li>
+                <li>How to choose the right book for your loved one's specific history</li>
+                <li>How to adapt sessions as dementia progresses through different stages</li>
+                <li>A complete chapter for activity directors running group sessions in facilities</li>
+                <li>A chapter on taking care of yourself — because you matter too</li>
+                <li>Printable tools: session tracking log, conversation prompt cards, and memory map worksheet</li>
+            </ul>
+
+            <p>This isn't a sales pitch. It's a resource I created because I believe every caregiver deserves to have it.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="cta-box">
+            <h3>Download Your Free Guide Now</h3>
+            <p>No cost. No spam. Just practical strategies you can use today.</p>
+            <a href="https://memorybridgebooks.gumroad.com/l/memory-care-guide" class="btn">Get the Free Guide</a>
+        </div>
+    </div>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>About Memory Bridge Books</h2>
+            <p>Memory Bridge Books creates therapeutic coloring books specifically designed for seniors with dementia and Alzheimer's disease. Our collections focus on historically accurate, nostalgic themes that spark memories and meaningful conversations.</p>
+            
+            <p>Unlike generic adult coloring books, every design is crafted with bold outlines, high contrast, and period-authentic details to support therapeutic engagement—especially for people in mid-to-late stage dementia.</p>
+
+            <p>We created these books—and this guide—because we believe in the dignity and humanity of every person experiencing memory loss, and the caregivers who love them.</p>
+
+            <p style="margin-top: 30px; text-align: center;">
+                <a href="https://www.amazon.com/author/memorybridgebooks" class="btn" style="background-color: var(--color-accent-b);">Browse Our Collection on Amazon</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Memory Bridge Books by Margaret Whitmore</p>
+            <p style="margin-top: 10px;">
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="https://www.etsy.com/shop/MemoryBridgeBooks">Etsy Shop</a> | 
+                <a href="https://www.amazon.com/author/memorybridgebooks">Amazon</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
