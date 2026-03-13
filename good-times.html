@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Good Times Collection | Memory Care Coloring Books</title>
+    <meta name="description" content="Boomer Edition leisure activities coloring books for memory care. Help seniors reconnect with cherished memories of good times.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #2D2D2D;
+            --color-bg: #F5F1E8;
+            --color-accent-a: #D4AF37;
+            --color-accent-b: #8B4513;
+            --color-neutral: #999999;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-primary);
+            line-height: 1.6;
+            background-color: var(--color-bg);
+        }
+
+        .paper-bg {
+            background-color: var(--color-bg);
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s ease;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--color-accent-a);
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #bfa030;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+            box-shadow: none;
+        }
+
+        .btn-outline:hover {
+            background: var(--color-primary);
+            color: #fff;
+        }
+
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(45, 45, 45, 0.1);
+            background-color: rgba(245, 241, 232, 0.95);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tagline {
+            font-family: var(--font-heading);
+            color: var(--color-accent-b);
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-left: 20px;
+            color: var(--color-primary);
+        }
+
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .showcase {
+            padding: 60px 0 80px;
+        }
+
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .book-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s;
+            border: 1px solid #eee;
+        }
+
+        .book-card:hover { transform: translateY(-5px); }
+
+        .book-card h3 { font-size: 1.25rem; margin-bottom: 10px; }
+        .book-card p { font-size: 0.95rem; color: #666; margin-bottom: 20px; }
+
+        footer {
+            background-color: var(--color-primary);
+            color: #fff;
+            padding: 60px 0 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .tagline { display: none; }
+        }
+    </style>
+</head>
+<body class="paper-bg">
+    <header>
+        <div class="container nav-wrapper">
+            <div class="header-logo">
+                <a href="index.html" style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: bold;">Memory Bridge Books</a>
+            </div>
+            <span class="tagline">The Good Times Collection</span>
+            <nav class="nav-links">
+                <a href="hub.html">Home</a>
+                <a href="downloads.html">Free Downloads</a>
+                <a href="#showcase">Shop on Amazon</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>The Good Times Collection</h1>
+            <p style="max-width: 700px; margin: 0 auto 40px;">Boomer Edition leisure activities that spark joy and conversation. Each book celebrates the cherished pastimes of the 1970s and 1980s — from backyard barbecues to Friday nights out.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; max-width: 900px; margin: 0 auto; padding: 20px;">
+                <img src="static/images/covers/fellowship-hall-cover.jpg" style="width: 100%; border-radius: 4px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <img src="static/images/covers/friday-night-cover.jpg" style="width: 100%; border-radius: 4px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <img src="static/images/covers/gone-fishin-cover.jpg" style="width: 100%; border-radius: 4px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <img src="static/images/covers/living-room-cover.jpg" style="width: 100%; border-radius: 4px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <img src="static/images/covers/open-air-cover.jpg" style="width: 100%; border-radius: 4px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+
+    <section class="showcase" id="showcase">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">Leisure & Laughter from the Boomer Era</h2>
+            <div class="book-grid">
+                <div class="book-card">
+                    <img src="static/images/covers/living-room-cover.jpg" style="width: 100%; height: auto; margin-bottom: 20px;">
+                    <h3>The Living Room</h3>
+                    <p>An Evening at Home — TV dinners, console television, and family nights.</p>
+                    <a href="https://www.amazon.com/dp/B0GS9F787H" class="btn btn-outline" target="_blank">View on Amazon</a>
+                </div>
+
+                <div class="book-card">
+                    <img src="static/images/covers/open-air-cover.jpg" style="width: 100%; height: auto; margin-bottom: 20px;">
+                    <h3>The Open Air</h3>
+                    <p>Yard & Neighborhood — Backyard barbecues, lawn chairs, and summer evenings.</p>
+                    <a href="https://www.amazon.com/dp/B0GS9CNFD5" class="btn btn-outline" target="_blank">View on Amazon</a>
+                </div>
+
+                <div class="book-card">
+                    <img src="static/images/covers/fellowship-hall-cover.jpg" style="width: 100%; height: auto; margin-bottom: 20px;">
+                    <h3>The Fellowship Hall</h3>
+                    <p>Community & Faith — Potluck dinners, church gatherings, and warm fellowship.</p>
+                    <a href="https://www.amazon.com/dp/B0GS9F1SQ5" class="btn btn-outline" target="_blank">View on Amazon</a>
+                </div>
+
+                <div class="book-card">
+                    <img src="static/images/covers/gone-fishin-cover.jpg" style="width: 100%; height: auto; margin-bottom: 20px;">
+                    <h3>Gone Fishin'</h3>
+                    <p>A Sportsman's Coloring Book — Fishing, bowling, golf, and outdoor adventure.</p>
+                    <a href="https://www.amazon.com/dp/B0GS9LQY2J" class="btn btn-outline" target="_blank">View on Amazon</a>
+                </div>
+
+                <div class="book-card">
+                    <img src="static/images/covers/friday-night-cover.jpg" style="width: 100%; height: auto; margin-bottom: 20px;">
+                    <h3>Friday Night</h3>
+                    <p>An Evening Out — Drive-in movies, date night, and special occasions.</p>
+                    <a href="https://www.amazon.com/dp/B0GS97TJ5Z" class="btn btn-outline" target="_blank">View on Amazon</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px; padding: 40px; background: #fff; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                <h3 style="margin-bottom: 20px;">Why The Good Times Collection?</h3>
+                <p style="max-width: 700px; margin: 0 auto; color: #555;">These aren't just coloring books — they're memory sparks. Each page features large, bold illustrations from the Boomer era (1970s-1980s), designed to trigger happy memories and start conversations. Perfect for seniors with dementia, Alzheimer's, or anyone looking to reconnect with the good old days.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Memory Bridge Books by Margaret Whitmore | <a href="/privacy.html" style="color: var(--color-accent-a); text-decoration: underline;">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -125,5 +125,52 @@
       "status": "live",
       "cover": "bold-easy-saltwater.jpg"
     }
+  ],
+  "good-times-collection": [
+    {
+      "title": "The Living Room: An Evening at Home",
+      "subtitle": "The Good Times Collection, Boomer Edition",
+      "asin": "B0GS9F787H",
+      "etsyUrl": "",
+      "status": "live",
+      "cover": "living-room-cover.jpg",
+      "publishedDate": "2026-03-12"
+    },
+    {
+      "title": "The Open Air: Yard & Neighborhood",
+      "subtitle": "The Good Times Collection, Boomer Edition",
+      "asin": "B0GS9CNFD5",
+      "etsyUrl": "",
+      "status": "live",
+      "cover": "open-air-cover.jpg",
+      "publishedDate": "2026-03-12"
+    },
+    {
+      "title": "The Fellowship Hall: Community & Faith",
+      "subtitle": "The Good Times Collection, Boomer Edition",
+      "asin": "B0GS9F1SQ5",
+      "etsyUrl": "",
+      "status": "live",
+      "cover": "fellowship-hall-cover.jpg",
+      "publishedDate": "2026-03-12"
+    },
+    {
+      "title": "Gone Fishin': A Sportsman's Coloring Book",
+      "subtitle": "The Good Times Collection, Boomer Edition",
+      "asin": "B0GS9LQY2J",
+      "etsyUrl": "",
+      "status": "live",
+      "cover": "gone-fishin-cover.jpg",
+      "publishedDate": "2026-03-12"
+    },
+    {
+      "title": "Friday Night: An Evening Out",
+      "subtitle": "The Good Times Collection, Boomer Edition",
+      "asin": "B0GS97TJ5Z",
+      "etsyUrl": "",
+      "status": "live",
+      "cover": "friday-night-cover.jpg",
+      "publishedDate": "2026-03-12"
+    }
   ]
 }
