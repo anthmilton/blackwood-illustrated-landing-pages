@@ -172,5 +172,61 @@
       "cover": "friday-night-cover.jpg",
       "publishedDate": "2026-03-12"
     }
+  ],
+  "regional-series": [
+    {
+      "title": "Steel Belt: A Furnace & Foundry Coloring Book",
+      "subtitle": "Therapeutic Activity Book with Steel Mill and River Valley Scenes from the 1950s-1970s for Alzheimer's",
+      "asin": "B0GT9FHK2R",
+      "etsyUrl": "https://www.etsy.com/ca/listing/4474285521/steel-belt-a-furnace-foundry-coloring",
+      "status": "live",
+      "cover": "steel-belt.png",
+      "publishedDate": "2026-03-20"
+    },
+    {
+      "title": "New England Coast: A Maritime Coloring Book",
+      "subtitle": "Therapeutic Activity Book with Lobstering and Harbor Scenes from the 1950s-1980s for Alzheimer's",
+      "asin": "B0GT9RSSJ3",
+      "etsyUrl": "https://www.etsy.com/ca/listing/4474292046/nnew-england-coast-a-maritime-coloring",
+      "status": "live",
+      "cover": "new-england-coast.png",
+      "publishedDate": "2026-03-20"
+    },
+    {
+      "title": "Mill Town: A Textile & Factory Coloring Book",
+      "subtitle": "Therapeutic Activity Book with Mill Floor Scenes from the 1940s-1970s for Alzheimer's and Memory Care",
+      "asin": "B0GT992V7S",
+      "etsyUrl": "https://www.etsy.com/ca/listing/4474289926/mill-town-textile-factory-coloring-book",
+      "status": "live",
+      "cover": "mill-town.png",
+      "publishedDate": "2026-03-20"
+    },
+    {
+      "title": "Gulf Coast: A Bayou & Shore Coloring Book",
+      "subtitle": "Therapeutic Activity Book with Shrimping Scenes from the 1950s-1980s for Alzheimer's and Memory Care",
+      "asin": "B0GT9DXYV8",
+      "etsyUrl": "https://www.etsy.com/ca/listing/4474278989/gulf-coast-bayou-coloring-book-for",
+      "status": "live",
+      "cover": "gulf-coast.png",
+      "publishedDate": "2026-03-20"
+    },
+    {
+      "title": "Farm Belt: A Heartland Coloring Book",
+      "subtitle": "Therapeutic Activity Book with Family Farm Scenes from the 1950s-1980s for Alzheimer's",
+      "asin": "B0GT9C3578",
+      "etsyUrl": "https://www.etsy.com/ca/listing/4474285704/farm-belt-heartland-coloring-book",
+      "status": "live",
+      "cover": "farm-belt.png",
+      "publishedDate": "2026-03-20"
+    },
+    {
+      "title": "Coal Country: An Appalachian Coloring Book",
+      "subtitle": "Therapeutic Activity Book with Coal Mining Scenes for Alzheimer's and Memory Care",
+      "asin": "B0GT99HPD1",
+      "etsyUrl": "https://www.etsy.com/ca/listing/4474282110/coal-country-appalachian-coloring-book",
+      "status": "live",
+      "cover": "coal-country.png",
+      "publishedDate": "2026-03-20"
+    }
   ]
 }

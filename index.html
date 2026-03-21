@@ -329,7 +329,8 @@
         <a href="#working-life">Working Life (Men)</a>
         <a href="#womens-life">Working Life (Women)</a>
         <a href="#outdoor">Outdoor Adventures</a>
-        <a href="#good-times" style="color: #D4AF37; font-weight: bold;">Good Times ✨</a>
+        <a href="#good-times">Good Times</a>
+        <a href="#regional" style="color: #D4AF37; font-weight: bold;">Regional Series ✨</a>
         <a href="downloads.html">Free Downloads</a>
         <a href="#about">About Margaret</a>
         <a href="https://www.amazon.com/author/memorybridgebooks" target="_blank">Amazon</a>
@@ -408,10 +409,21 @@
         <!-- Good Times Collection Section -->
         <section class="section" id="good-times">
             <div class="section-header">
-                <h2>The Good Times Collection <span class="badge" style="background-color: #D4AF37;">NEW</span></h2>
+                <h2>The Good Times Collection</h2>
                 <p>Boomer Edition leisure activities from the 1970s-80s. Drive-in movies, backyard barbecues, fellowship halls, and Friday nights out. Cherished pastimes that spark joy and conversation.</p>
             </div>
             <div class="book-grid" id="good-times-books">
+                <!-- Books will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Regional Series Collection Section -->
+        <section class="section" id="regional">
+            <div class="section-header">
+                <h2>The Regional Series <span class="badge" style="background-color: #D4AF37;">NEW</span></h2>
+                <p>Regional industries and traditions from across America. Steel mills, textile factories, maritime life, coal mines, family farms, and Gulf Coast shrimping. Honoring the backbone of American working life from the 1940s-1980s.</p>
+            </div>
+            <div class="book-grid" id="regional-books">
                 <!-- Books will be loaded here -->
             </div>
         </section>
@@ -464,6 +476,7 @@
                 renderBooks(data['womens-working-life'], 'womens-life-books');
                 renderBooks(data['bold-easy-collection'], 'outdoor-books');
                 renderBooks(data['good-times-collection'], 'good-times-books');
+                renderBooks(data['regional-series'], 'regional-books');
             })
             .catch(error => console.error('Error loading books:', error));
 
