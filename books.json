@@ -228,5 +228,61 @@
       "cover": "coal-country.png",
       "publishedDate": "2026-03-20"
     }
+  ],
+  "era-collection": [
+    {
+      "title": "The Sound: A Music Coloring Book",
+      "subtitle": "The Era Collection",
+      "asin": "",
+      "etsyUrl": "https://www.etsy.com/listing/4482206109/music-coloring-book-for-seniors-1960s",
+      "status": "pending",
+      "cover": "the-sound.jpg",
+      "publishedDate": "2026-04-07"
+    },
+    {
+      "title": "The Ride: A Car Culture Coloring Book",
+      "subtitle": "The Era Collection",
+      "asin": "",
+      "etsyUrl": "https://www.etsy.com/listing/4482206129/the-ride-car-culture-coloring-book-1960s",
+      "status": "pending",
+      "cover": "the-ride.jpg",
+      "publishedDate": "2026-04-07"
+    },
+    {
+      "title": "The Look: A Style & Screen Coloring Book",
+      "subtitle": "The Era Collection",
+      "asin": "",
+      "etsyUrl": "https://www.etsy.com/listing/4482210962/1960s-1970s-style-screen-coloring-book",
+      "status": "pending",
+      "cover": "the-look.jpg",
+      "publishedDate": "2026-04-07"
+    }
+  ],
+  "standalone-collection": [
+    {
+      "title": "The Lake: A Summer Coloring Book",
+      "asin": "",
+      "etsyUrl": "https://www.etsy.com/listing/4482206147/summer-lake-coloring-book-for-seniors",
+      "status": "pending",
+      "cover": "the-lake.jpg",
+      "publishedDate": "2026-04-07"
+    },
+    {
+      "title": "Before We Grew Up",
+      "asin": "",
+      "etsyUrl": "https://www.etsy.com/listing/4482210990/childhood-coloring-book-for-seniors",
+      "status": "pending",
+      "cover": "before-we-grew-up.jpg",
+      "publishedDate": "2026-04-07"
+    },
+    {
+      "title": "While They Color",
+      "subtitle": "A Caregiver Coloring Book",
+      "asin": "",
+      "etsyUrl": "https://www.etsy.com/listing/4482211006/caregiver-coloring-book-meditative",
+      "status": "pending",
+      "cover": "while-they-color.jpg",
+      "publishedDate": "2026-04-07"
+    }
   ]
 }
