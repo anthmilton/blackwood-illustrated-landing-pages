@@ -233,56 +233,56 @@
     {
       "title": "The Sound: A Music Coloring Book",
       "subtitle": "The Era Collection",
-      "asin": "",
+      "asin": "B0GWH5NF27",
       "etsyUrl": "https://www.etsy.com/listing/4482206109/music-coloring-book-for-seniors-1960s",
-      "status": "pending",
+      "status": "live",
       "cover": "the-sound.jpg",
-      "publishedDate": "2026-04-07"
+      "publishedDate": "2026-04-08"
     },
     {
       "title": "The Ride: A Car Culture Coloring Book",
       "subtitle": "The Era Collection",
-      "asin": "",
+      "asin": "B0GWH25T76",
       "etsyUrl": "https://www.etsy.com/listing/4482206129/the-ride-car-culture-coloring-book-1960s",
-      "status": "pending",
+      "status": "live",
       "cover": "the-ride.jpg",
-      "publishedDate": "2026-04-07"
+      "publishedDate": "2026-04-08"
     },
     {
       "title": "The Look: A Style & Screen Coloring Book",
       "subtitle": "The Era Collection",
-      "asin": "",
+      "asin": "B0GWH7YJ37",
       "etsyUrl": "https://www.etsy.com/listing/4482210962/1960s-1970s-style-screen-coloring-book",
-      "status": "pending",
+      "status": "live",
       "cover": "the-look.jpg",
-      "publishedDate": "2026-04-07"
+      "publishedDate": "2026-04-08"
     }
   ],
   "standalone-collection": [
     {
       "title": "The Lake: A Summer Coloring Book",
-      "asin": "",
+      "asin": "B0GWGVSQ73",
       "etsyUrl": "https://www.etsy.com/listing/4482206147/summer-lake-coloring-book-for-seniors",
-      "status": "pending",
+      "status": "live",
       "cover": "the-lake.jpg",
-      "publishedDate": "2026-04-07"
+      "publishedDate": "2026-04-08"
     },
     {
       "title": "Before We Grew Up",
-      "asin": "",
+      "asin": "B0GWH1R6NG",
       "etsyUrl": "https://www.etsy.com/listing/4482210990/childhood-coloring-book-for-seniors",
-      "status": "pending",
+      "status": "live",
       "cover": "before-we-grew-up.jpg",
-      "publishedDate": "2026-04-07"
+      "publishedDate": "2026-04-08"
     },
     {
       "title": "While They Color",
       "subtitle": "A Caregiver Coloring Book",
-      "asin": "",
+      "asin": "B0GWH821VV",
       "etsyUrl": "https://www.etsy.com/listing/4482211006/caregiver-coloring-book-meditative",
-      "status": "pending",
+      "status": "live",
       "cover": "while-they-color.jpg",
-      "publishedDate": "2026-04-07"
+      "publishedDate": "2026-04-08"
     }
   ]
 }
